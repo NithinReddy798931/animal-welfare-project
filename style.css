@@ -20,7 +20,7 @@ color:white;
 
 nav{
 
-height:80px;
+height:100px;
 
 display:flex;
 
@@ -53,6 +53,7 @@ font-size:25px;
 ul{
 
 display:flex;
+font-size:22px;
 
 gap:30px;
 
@@ -86,6 +87,7 @@ color:white;
 nav a:hover{
 
 color:#ff8c3a;
+
 
 }
 
@@ -1867,7 +1869,7 @@ overflow:hidden;
 
 text-align:center;
 
-padding-bottom:30px;
+padding:30px;
 
 transition:.3s;
 
@@ -1901,6 +1903,7 @@ width:100%;
 height:320px;
 
 object-fit:cover;
+border-radius:30px;
 
 
 }
