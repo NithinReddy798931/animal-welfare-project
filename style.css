@@ -2055,11 +2055,198 @@ color:#cbd5e1;
 
 
 
+/* ==========================================
+   TEAM PAGE RESPONSIVE
+   Add below your existing CSS
+========================================== */
+
+/* Tablet */
+@media screen and (max-width:768px){
+
+.team-intro{
+    padding:50px 20px;
+}
+
+.team-intro h1{
+    font-size:40px;
+}
+
+.team-intro p{
+    font-size:17px;
+    line-height:1.7;
+}
+
+.team-container{
+    grid-template-columns:repeat(2,1fr);
+    padding:40px 20px;
+    gap:25px;
+}
+
+.team-card{
+    padding:20px;
+}
+
+.team-card img{
+    height:280px;
+}
+
+.team-card p{
+    padding:0 10px;
+}
+
+.team-mission{
+    padding:60px 20px;
+}
+
+.team-mission h1{
+    font-size:35px;
+}
+
+.team-mission>p{
+    font-size:17px;
+}
+
+.mission-box{
+    justify-content:center;
+    gap:20px;
+}
+
+.mission-box div{
+    width:100%;
+    max-width:320px;
+}
+
+}
+
+/* Mobile */
+@media screen and (max-width:576px){
+
+.team-intro{
+    padding:35px 15px;
+}
+
+.team-intro h1{
+    font-size:32px;
+}
+
+.team-intro p{
+    font-size:16px;
+}
+
+.team-container{
+    grid-template-columns:1fr;
+    padding:25px 15px;
+    gap:20px;
+}
+
+.team-card{
+    padding:18px;
+    border-radius:20px;
+}
+
+.team-card img{
+    height:300px;
+    border-radius:20px;
+}
+
+.team-card h2{
+    font-size:26px;
+}
+
+.team-card h3{
+    font-size:18px;
+}
+
+.team-card p{
+    font-size:15px;
+    padding:0;
+}
+
+.team-mission{
+    padding:45px 15px;
+}
+
+.team-mission h1{
+    font-size:30px;
+}
+
+.team-mission>p{
+    font-size:16px;
+    margin:20px 0;
+}
+
+.mission-box{
+    gap:15px;
+}
+
+.mission-box div{
+    width:100%;
+    padding:25px 20px;
+    border-radius:20px;
+}
+
+}
+
+/* Small Mobile */
+@media screen and (max-width:400px){
+
+.team-intro{
+    padding:25px 12px;
+}
+
+.team-intro h1{
+    font-size:28px;
+}
+
+.team-intro p{
+    font-size:15px;
+}
+
+.team-container{
+    padding:20px 12px;
+}
+
+.team-card{
+    padding:15px;
+}
+
+.team-card img{
+    height:250px;
+}
+
+.team-card h2{
+    font-size:22px;
+}
+
+.team-card h3{
+    font-size:17px;
+}
+
+.team-card p{
+    font-size:14px;
+}
+
+.team-mission{
+    padding:35px 12px;
+}
+
+.team-mission h1{
+    font-size:26px;
+}
+
+.team-mission>p{
+    font-size:15px;
+}
+
+.mission-box div{
+    padding:20px 15px;
+}
+
+}
 
 
 
-
-@media(max-width:800px){
+/* @media(max-width:800px){
 
 
 .mission-box{
@@ -2071,7 +2258,7 @@ align-items:center;
 }
 
 
-}
+} */
 
 
 
