@@ -647,7 +647,496 @@ margin-bottom:20px;
 
 }
 
+/*=========================================
+            REWARDS SECTION
+=========================================*/
 
+.rewards{
+    padding:90px 8%;
+    background:#0f172a;
+    text-align:center;
+}
+
+.rewards h1{
+    font-size:48px;
+    color:#ff8c3a;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.reward-subtitle{
+    max-width:850px;
+    margin:0 auto 60px;
+    color:#cbd5e1;
+    font-size:19px;
+    line-height:1.8;
+}
+
+/*=========================================
+              CARD GRID
+=========================================*/
+
+.reward-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:35px;
+
+    align-items:stretch;
+
+}
+
+/*=========================================
+             REWARD CARD
+=========================================*/
+
+.reward-card{
+
+    position:relative;
+
+    background:rgba(30,41,59,.95);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:470px;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,140,58,.25);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* glowing top border */
+
+.reward-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,#ff8c3a,#ffb347,#ffd54f);
+
+}
+
+.reward-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 18px 40px rgba(255,140,58,.35);
+
+    border-color:#ff8c3a;
+
+}
+
+/*=========================================
+            CARD CONTENT
+=========================================*/
+
+.reward-card h2{
+
+    color:#ff8c3a;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    font-weight:700;
+
+}
+
+.reward-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+    font-size:17px;
+
+}
+
+.reward-card h3{
+
+    color:#FFD54F;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+/*=========================================
+          REWARD LIST
+=========================================*/
+
+.reward-card ul{
+
+    list-style:none;
+
+    margin-top:auto;
+
+    padding:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.reward-card ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#263445;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    border-left:5px solid #ff8c3a;
+
+}
+
+.reward-card ul li:hover{
+
+    background:#31445d;
+
+    transform:translateX(6px);
+
+}
+
+.reward-card ul li::before{
+
+    content:"🎁";
+
+    margin-right:12px;
+
+    font-size:18px;
+
+}
+
+/*=========================================
+          LEVEL TABLE
+=========================================*/
+
+.reward-levels{
+
+    margin-top:90px;
+
+}
+
+.reward-levels h2{
+
+    color:#ff8c3a;
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+}
+
+.reward-levels table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:#1e293b;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+.reward-levels th{
+
+    background:linear-gradient(90deg,#ff8c3a,#ffb347);
+
+    color:#111827;
+
+    padding:20px;
+
+    font-size:18px;
+
+}
+
+.reward-levels td{
+
+    padding:18px;
+
+    color:#d8dee9;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.reward-levels tr:hover{
+
+    background:#2a3b52;
+
+}
+
+/*=========================================
+            COUPON SECTION
+=========================================*/
+
+.coupon-section{
+
+    margin-top:90px;
+
+}
+
+.coupon-section h2{
+
+    color:#ff8c3a;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+.coupon-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+
+    gap:30px;
+
+}
+
+.coupon{
+
+    background:linear-gradient(135deg,#ff8c3a,#ffb347);
+
+    color:#111827;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+.coupon:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+}
+
+.coupon h3{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.coupon p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+/*=========================================
+             BADGES
+=========================================*/
+
+.badges{
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.badges h1{
+
+    color:#ff8c3a;
+
+    font-size:45px;
+
+    margin-bottom:50px;
+
+}
+
+.badge-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:30px;
+
+}
+
+.badge{
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,140,58,.2);
+
+}
+
+.badge:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(255,140,58,.3);
+
+}
+
+.badge span{
+
+    display:block;
+
+    font-size:60px;
+
+    margin-bottom:18px;
+
+}
+
+.badge h3{
+
+    color:#ff8c3a;
+
+    margin-bottom:12px;
+
+}
+
+.badge p{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+}
+
+/*=========================================
+          RESPONSIVE
+=========================================*/
+
+@media(max-width:900px){
+
+.reward-cards{
+
+grid-template-columns:1fr;
+
+}
+
+.reward-card{
+
+min-height:auto;
+
+}
+
+.coupon-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.badge-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.reward-levels{
+
+overflow-x:auto;
+
+}
+
+.reward-levels table{
+
+min-width:700px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.rewards h1{
+
+font-size:36px;
+
+}
+
+.reward-subtitle{
+
+font-size:16px;
+
+}
+
+.reward-card{
+
+padding:25px;
+
+}
+
+.reward-card h2{
+
+font-size:24px;
+
+}
+
+.reward-card p{
+
+font-size:16px;
+
+}
+
+}
 
 
 
@@ -683,6 +1172,7 @@ width:100%;
 
 
 }
+
 
 
 /* rescue page */
@@ -954,6 +1444,222 @@ margin-bottom:40px;
 }
 
 
+/*==========================
+EMERGENCY CONTACT
+===========================*/
+
+.emergency-contact{
+padding:80px 10%;
+text-align:center;
+background:#111827;
+}
+
+.emergency-contact h1{
+font-size:42px;
+color:#ff8c3a;
+margin-bottom:20px;
+}
+
+.emergency-contact p{
+color:#cbd5e1;
+max-width:750px;
+margin:auto;
+line-height:1.8;
+margin-bottom:50px;
+}
+
+.contact-boxes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.contact-card{
+background:#1e293b;
+padding:35px;
+border-radius:20px;
+transition:.4s;
+border-top:4px solid #34d399;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 25px rgba(52,211,153,.3);
+}
+
+.contact-card h2{
+color:#34d399;
+margin-bottom:15px;
+}
+
+.contact-card p{
+color:white;
+}
+
+/*==========================
+BEFORE RESCUE
+===========================*/
+
+.before-rescue{
+padding:90px 10%;
+text-align:center;
+}
+
+.before-rescue h1{
+color:#ff8c3a;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.before-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.before-card{
+background:#1e293b;
+padding:35px;
+border-radius:20px;
+transition:.4s;
+}
+
+.before-card:hover{
+transform:translateY(-10px);
+}
+
+.before-card span{
+font-size:55px;
+display:block;
+margin-bottom:15px;
+}
+
+.before-card h2{
+color:#34d399;
+margin-bottom:15px;
+}
+
+.before-card p{
+color:#cbd5e1;
+line-height:1.8;
+}
+
+/*==========================
+STATS
+===========================*/
+
+.rescue-stats{
+padding:90px 10%;
+background:#111827;
+text-align:center;
+}
+
+.rescue-stats h1{
+color:#ff8c3a;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.stat-box{
+background:#1e293b;
+padding:40px;
+border-radius:20px;
+}
+
+.stat-box h2{
+font-size:45px;
+color:#34d399;
+}
+
+.stat-box p{
+color:#cbd5e1;
+margin-top:10px;
+}
+
+/*==========================
+TIPS
+===========================*/
+
+.rescue-tips{
+padding:90px 10%;
+text-align:center;
+}
+
+.rescue-tips h1{
+color:#ff8c3a;
+margin-bottom:50px;
+font-size:42px;
+}
+
+.tips-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.tip-card{
+background:#1e293b;
+padding:35px;
+border-radius:20px;
+font-size:45px;
+transition:.4s;
+}
+
+.tip-card:hover{
+transform:translateY(-8px);
+}
+
+.tip-card h3{
+font-size:25px;
+color:#34d399;
+margin:20px 0;
+}
+
+.tip-card p{
+font-size:16px;
+color:#cbd5e1;
+line-height:1.7;
+}
+
+/*==========================
+FAQ
+===========================*/
+
+.faq{
+padding:90px 10%;
+background:#111827;
+}
+
+.faq h1{
+text-align:center;
+color:#ff8c3a;
+margin-bottom:50px;
+font-size:42px;
+}
+
+.faq-box{
+background:#1e293b;
+padding:30px;
+margin-bottom:20px;
+border-left:5px solid #ff8c3a;
+border-radius:15px;
+}
+
+.faq-box h3{
+color:#34d399;
+margin-bottom:15px;
+}
+
+.faq-box p{
+color:#cbd5e1;
+line-height:1.8;
+}
 
 
 
@@ -1069,6 +1775,8 @@ width:100%;
 
 
 }
+
+
 
 /* adoption page */
 
@@ -1374,7 +2082,311 @@ margin-top:15px;
 }
 
 
+/*==============================
+SECTION COMMON
+==============================*/
 
+.section-subtitle{
+
+max-width:800px;
+
+margin:20px auto 60px;
+
+color:#cbd5e1;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/*==============================
+WHY VOLUNTEER
+==============================*/
+
+.why-volunteer{
+
+padding:90px 10%;
+
+text-align:center;
+
+}
+
+.why-volunteer h1{
+
+font-size:42px;
+
+color:#ff8c3a;
+
+margin-bottom:10px;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.why-card{
+
+background:#1e293b;
+
+padding:35px;
+
+border-radius:20px;
+
+transition:.4s;
+
+border-top:4px solid #34d399;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 30px rgba(52,211,153,.25);
+
+}
+
+.icon{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.why-card h2{
+
+color:#34d399;
+
+margin-bottom:15px;
+
+}
+
+.why-card p{
+
+color:#cbd5e1;
+
+line-height:1.8;
+
+}
+
+/*==============================
+BENEFITS
+==============================*/
+
+.volunteer-benefits{
+
+padding:90px 10%;
+
+background:#111827;
+
+text-align:center;
+
+}
+
+.volunteer-benefits h1{
+
+font-size:42px;
+
+color:#ff8c3a;
+
+}
+
+.benefit-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.benefit-card{
+
+background:#1e293b;
+
+padding:35px;
+
+border-radius:20px;
+
+transition:.4s;
+
+border-left:5px solid #ff8c3a;
+
+}
+
+.benefit-card:hover{
+
+transform:scale(1.04);
+
+}
+
+.benefit-card span{
+
+font-size:55px;
+
+display:block;
+
+margin-bottom:20px;
+
+}
+
+.benefit-card h2{
+
+color:#ff8c3a;
+
+margin-bottom:15px;
+
+}
+
+.benefit-card p{
+
+color:#cbd5e1;
+
+line-height:1.8;
+
+}
+
+/*==============================
+VOLUNTEER JOURNEY
+==============================*/
+
+.journey{
+
+padding:90px 8%;
+
+text-align:center;
+
+}
+
+.journey h1{
+
+font-size:42px;
+
+color:#ff8c3a;
+
+}
+
+.journey-line{
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-start;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:60px;
+
+}
+
+.journey-step{
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+width:230px;
+
+transition:.4s;
+
+}
+
+.journey-step:hover{
+
+transform:translateY(-10px);
+
+}
+
+.step-number{
+
+width:70px;
+
+height:70px;
+
+background:#ff8c3a;
+
+color:#111827;
+
+font-size:30px;
+
+font-weight:bold;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin:auto auto 20px;
+
+}
+
+.journey-step h3{
+
+color:#34d399;
+
+margin-bottom:15px;
+
+}
+
+.journey-step p{
+
+color:#cbd5e1;
+
+line-height:1.7;
+
+}
+
+.journey-arrow{
+
+font-size:45px;
+
+color:#ff8c3a;
+
+margin-top:80px;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:900px){
+
+.journey-line{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.journey-arrow{
+
+transform:rotate(90deg);
+
+margin:0;
+
+}
+
+}
 
 
 
@@ -2184,6 +3196,548 @@ text-decoration:none;
 }
 
 
+
+
+/*=========================================
+        ANIMAL FEEDING GUIDE
+==========================================*/
+
+/*=========================================
+        ANIMAL FEEDING GUIDE
+=========================================*/
+
+.feeding-guide{
+    padding:90px 6%;
+    background:#081322;
+}
+
+/* ---------- Heading ---------- */
+
+.feed-heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.feed-heading h1{
+    color:#ff9336;
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.heading-line{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    color:#ff9336;
+    font-size:24px;
+    margin-bottom:25px;
+}
+
+.heading-line span{
+    width:90px;
+    height:3px;
+    background:#ff9336;
+    border-radius:20px;
+}
+
+.feed-heading p{
+    color:#d7dde8;
+    font-size:23px;
+    line-height:1.9;
+}
+
+/* ---------- Grid ---------- */
+
+.feeding-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+/* ---------- Cards ---------- */
+
+.feed-card{
+
+    position:relative;
+
+    background:linear-gradient(180deg,#16243b,#111b2d);
+
+    border-radius:26px;
+
+    padding:30px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.feed-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/* Colored Borders */
+
+.dog{
+    border:2px solid #2dd4bf;
+}
+
+.cat{
+    border:2px solid #fbbf24;
+}
+
+.cow{
+    border:2px solid #38bdf8;
+}
+
+.bird{
+    border:2px solid #c084fc;
+}
+
+/* Animal Circle */
+
+.animal-circle{
+
+    width:92px;
+    height:92px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:48px;
+
+    background:#23344d;
+
+}
+
+.dog .animal-circle{
+    border:2px solid #2dd4bf;
+}
+
+.cat .animal-circle{
+    border:2px solid #fbbf24;
+}
+
+.cow .animal-circle{
+    border:2px solid #38bdf8;
+}
+
+.bird .animal-circle{
+    border:2px solid #c084fc;
+}
+
+/* Animal Name */
+
+.feed-card h2{
+
+    text-align:center;
+
+    color:#ff9336;
+
+    font-size:34px;
+
+    margin:18px 0 25px;
+
+}
+
+/* Good / Bad Tag */
+
+.food-tag{
+
+    width:170px;
+
+    margin:0 auto 28px;
+
+    padding:12px;
+
+    border-radius:50px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+.good-tag{
+
+    background:#184d39;
+
+    color:#5af38d;
+
+}
+
+.bad-tag{
+
+    background:#592834;
+
+    color:#ff667b;
+
+}
+
+/* Divider */
+
+.divider{
+
+    height:1px;
+
+    background:rgba(255,255,255,.12);
+
+    margin:30px 0;
+
+}
+
+/* Food List */
+
+.food-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.food{
+
+    position:relative;
+
+    padding-left:34px;
+
+    font-size:22px;
+
+    color:white;
+
+    line-height:1.45;
+
+}
+
+/* Good */
+
+.food.good::before{
+
+    content:"✔";
+
+    position:absolute;
+
+    left:0;
+
+    color:#61f48f;
+
+    font-weight:bold;
+
+}
+
+/* Bad */
+
+.food.bad::before{
+
+    content:"✖";
+
+    position:absolute;
+
+    left:0;
+
+    color:#ff6077;
+
+    font-weight:bold;
+
+}
+
+/* Paw */
+
+.paw-bg{
+
+    position:absolute;
+
+    right:18px;
+
+    bottom:15px;
+
+    font-size:56px;
+
+    opacity:.07;
+
+}
+
+/* ---------- Info Box ---------- */
+
+.feeding-info{
+
+    margin:55px auto 0;
+
+    background:#11213b;
+
+    border:1px solid #245a8a;
+
+    border-radius:20px;
+
+    padding:28px 35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.info-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.info-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:3px solid #3fa8ff;
+
+    color:#3fa8ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+}
+
+.info-left h3{
+
+    color:#3fa8ff;
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+.info-left p{
+
+    color:#d6dce8;
+
+    font-size:20px;
+
+    line-height:1.7;
+
+}
+
+.info-paw{
+
+    font-size:50px;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:1200px){
+
+    .feeding-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .feeding-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .feed-heading h1{
+
+        font-size:42px;
+
+    }
+
+    .feed-heading p{
+
+        font-size:18px;
+
+    }
+
+    .feeding-info{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:20px;
+
+    }
+
+    .info-left{
+
+        flex-direction:column;
+
+    }
+
+}
+
+/*=============================
+EMERGENCY STEPS
+==============================*/
+
+.emergency-steps{
+
+padding:90px 8%;
+
+text-align:center;
+
+}
+
+.emergency-steps h1{
+
+color:#ff8c3a;
+
+margin-bottom:50px;
+
+}
+
+.steps{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.step{
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+}
+
+.step span{
+
+font-size:50px;
+
+display:block;
+
+margin-bottom:15px;
+
+}
+
+.step h3{
+
+color:#34d399;
+
+}
+
+.step p{
+
+color:#cbd5e1;
+
+line-height:1.7;
+
+}
+
+/*=============================
+CARE TIPS
+==============================*/
+
+.care-tips{
+
+padding:90px 8%;
+
+background:#111827;
+
+text-align:center;
+
+}
+
+.care-tips h1{
+
+color:#ff8c3a;
+
+margin-bottom:50px;
+
+}
+
+.tips-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.tip{
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+font-size:45px;
+
+transition:.3s;
+
+}
+
+.tip:hover{
+
+transform:translateY(-8px);
+
+}
+
+.tip h3{
+
+font-size:24px;
+
+color:#34d399;
+
+margin:15px 0;
+
+}
+
+.tip p{
+
+font-size:16px;
+
+color:#cbd5e1;
+
+line-height:1.7;
+
+}
 
 
 
